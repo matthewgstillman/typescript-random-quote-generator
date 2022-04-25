@@ -8,7 +8,6 @@ const App: FC = () => {
     <div className="App">
       <h1>Random Quotes Generator</h1>
       <Quotes />
-      {/* <Request /> */}
     </div>
   );
 };

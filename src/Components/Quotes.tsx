@@ -1,9 +1,9 @@
 import React, { useState, useEffect, FC } from "react";
 import { ITask } from "../Interfaces";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col, Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
-const Request: FC = () => {
+const Quotes: FC = () => {
   const [quoteList, setQuoteList] = useState<ITask[]>([]);
   const [randomQuote, setRandomQuote] = useState<ITask[]>([
     {
@@ -36,7 +36,9 @@ const Request: FC = () => {
       {randomQuote[0]["author"] !== null ? (
         <div>
           <p>
-            <i className="quoteText">"{randomQuote[0]["text"]}"</i>
+            <i data-testid="randomQuote" className="quoteText">
+              "{randomQuote[0]["text"]}"
+            </i>
           </p>
           <h3>- {randomQuote[0]["author"]}</h3>
           <br />
@@ -60,4 +62,4 @@ const Request: FC = () => {
   );
 };
 
-export default Request;
+export default Quotes;
