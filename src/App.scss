@@ -9,10 +9,10 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-            animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,4 +30,4 @@
 
 body {
   margin: 25px;
-}/*# sourceMappingURL=App.css.map */
+}
